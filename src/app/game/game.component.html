@@ -1,0 +1,12 @@
+<section>
+  <header>
+    <h3>Jogo da velha</h3>
+  </header>
+  <main>
+    @for(position of board; let idx = $index; track idx){
+    <div class="cell" (click)="isAllowedPlay && selectedPosition(idx)">
+      {{ board[idx].value }}
+    </div>
+    }
+  </main>
+</section>
