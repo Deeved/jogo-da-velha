@@ -1,0 +1,11 @@
+<div style="display: flex; flex-direction: column;">
+    <div style="background-color: green; padding: 20px;">
+        <div>
+            <span>Passo X</span>
+        </div>
+    </div>
+
+    <app-challeng></app-challeng>
+    
+    <app-alphabet (letter)="selectedLetters.push($event)"></app-alphabet>
+</div>

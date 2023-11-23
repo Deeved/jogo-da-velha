@@ -1,0 +1,5 @@
+<div style="display: grid; gap: 8px; margin: 16px; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));">
+    @for (letter of letters; track letter.value) {
+        <button (click)="sendLetter(letter)" [disabled]="letter.selected">{{letter.value}}</button>
+    }
+</div>
